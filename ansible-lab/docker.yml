@@ -1,0 +1,20 @@
+---
+- hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Install Docker
+      dnf:
+        name: docker
+        state: present
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+
+    - name: Enable Docker
+      service:
+        name: docker
+        enabled: yes   
