@@ -1,0 +1,6 @@
+---
+# vars file for docker_app
+docker_image: nginx
+container_name: my-nginx
+container_port: 80
+host_port: 80

@@ -1,0 +1,6 @@
+---
+# handlers file for docker_app
+- name: Restart Container
+  shell: |
+    docker restart {{ container_name }}
+  become: yes
